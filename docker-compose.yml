@@ -1,11 +1,13 @@
 version: '3'
 services:
-  frontend:
+  drf-frontend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: deploy/docker/local/linux/node/Dockerfile
     ports:
-      - 8080:5173
+      - 8080:3000
     volumes:
       - .:/opt/app
-    command: npm run dev
+      - /opt/app/node_modules
+    command: npm run dev -- --host
+    restart: unless-stopped

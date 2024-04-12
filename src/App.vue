@@ -8,7 +8,7 @@
     </a>
   </div>
   <div class="content">
-    Hello1
+    Skizor
     <div v-for="item in data" :key="item.id">
       {{ item.id }} - {{ item.name }} - {{ item.email }}
     </div>
