@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# Тестовое задание
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Для запуска проекта необходимо запустить команду make init либо же npm i & npm run dev
 
-## Recommended IDE Setup
+В случае запуска через docker-compose проект будет доступен на порту 8080
+В случае запуска через npm run dev проект будет доступен на порту 3000
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Благодарю за уделенное время на проверку тестового задания

@@ -1,3 +1,5 @@
+init: build up
+
 rebuild:
 	docker-compose down
 	docker-compose build --no-cache
