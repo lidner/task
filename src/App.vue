@@ -72,33 +72,29 @@ const years = [
   flex-direction: column;
 }
 
-/* Code block styles */
-    .code-container {
-        width: 80%;
-        max-width: 800px;
-        background-color: #2d2d2d;
-        border: 1px solid #3a3a3a;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        white-space: pre-wrap;
-        overflow-x: auto;
-        font-size: 14px;
-        line-height: 1.5;
-    }
+.code-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #2d2d2d;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-    /* Code syntax highlighting */
-    .code-container code {
-        color: #333333;
-    }
+.code-container code {
+    color: #333333;
+}
 
-    /* Example syntax highlighting for JavaScript */
-    .code-container code.sql {
-        color: #ccc;
-    }
+.code-container code.sql {
+    color: #ccc;
+}
 
-    /* Example syntax highlighting for comments */
-    .code-container code.comment {
-        color: #888888;
-    }
+.code-container code.comment {
+    color: #888888;
+}
 </style>
