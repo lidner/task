@@ -10,13 +10,15 @@
       <td>{{ formatNumber(node.data[year]) || '-' }}</td>
     </template>
   </tr>
-
-  <TreeNodeRow v-if="expanded && hasChildren" v-for="(node, nodeName) in node.children"
+  
+  <template v-if="expanded && hasChildren">
+    <TreeNodeRow v-for="(node, nodeName) in node.children"
                   :key="nodeName"
                   :nodeName="nodeName"
                   :node="node"
                   :level="level + 1"
       />
+  </template>
 </template>
 
 <script setup>
@@ -35,10 +37,6 @@ const expanded = ref(false);
 
 const hasChildren = computed(() => {
   return props.node.children && Object.keys(props.node.children).length > 0;
-});
-
-const isChild = computed(() => {
-  return props.parentNode !== undefined;
 });
 
 const toggleChildren = () => {
